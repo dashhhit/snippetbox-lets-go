@@ -32,7 +32,7 @@ func main() {
 	}
 
 	infoLog.Printf("Starting server on %s\n", *addr)
-	err := http.ListenAndServe(*addr, mux)
+	err := srv.ListenAndServe()
 	errorLog.Fatal(err)
 
 }
